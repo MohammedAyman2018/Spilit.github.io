@@ -1,0 +1,171 @@
+$mainColor: #ddd
+$hoverColor: white
+$secondColor: #aaaaaa
+$mainMargin: 25px
+$mainLineHeight: 1.5
+
+=header($size,$color, $wieght: 900)
+    font-size: $size
+    font-weight: $wieght !important
+    color: $color
+    font-stretch: 100%
+    margin: 0 0 $mainMargin 0
+
+=btn($bg:#f32853, $hbg:#f44066)
+    background-color: $bg !important
+    padding: 15px 40px
+    border: none
+    color: white
+    font-weight: bold
+    font-size: 18px
+    &:hover
+        background-color: $hbg !important
+body
+    background-image: url("../img/banner.jpg")
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    background-attachment: fixed
+    font-family: Arial !important
+
+    .overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        z-index: -1
+        height: 100%
+        background-image: url("../img/overlay.png")
+        background-size: cover
+        background-position: top
+        background-repeat: no-repeat
+        background-attachment: fixed
+    
+    nav
+        padding-top: 3.25em
+        background-color: transparent !important
+        border: none !important
+        box-shadow: none !important
+        .navbar-header p.navbar-brand
+            color: $hoverColor 
+            font-weight: 200 !important
+            &:hover
+                color: $hoverColor
+                cursor: pointer
+        ul
+            li
+                a
+                    color: $mainColor !important
+                    font-size: 16px
+                    transition: all 0.5s ease-out
+                    &:hover
+                        color: $hoverColor !important
+                &.active > a
+                    background-color: transparent !important
+
+    .banner
+        display: block
+        width: 100%
+        height: 79vh
+        .container
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: $hoverColor
+            h1
+                +header(40px, white)
+            p
+                color: $secondColor
+                line-height: $mainLineHeight
+                font-size: 22px
+                margin-bottom: $mainMargin
+            button
+                +btn()
+    .section-one
+        margin: 0
+        background-color: #fff
+        .container 
+            .left
+                p.h1
+                    +header(40px, black, 700)
+                h2
+                    +header(20px, $secondColor, normal)
+            .right
+                    line-height: $mainLineHeight+0.5
+    .section-two
+        background-color: rgb(246, 246, 246) !important
+        header
+            h1
+                +header(44px, #484848, bolder)
+            h2
+                +header(25px, $secondColor, normal)
+        .card
+            footer
+                box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15)
+                background-color: #fff
+                padding: 20px 0
+                +header(20px, #484848, bold)
+        .btns
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: $mainMargin
+            button
+                margin-left: $mainMargin
+                &:nth-child(1)
+                    +btn()
+                &:nth-child(2)
+                    +btn(#323037,#3e3c45)
+    .section-three
+        background-color: #fff
+        h1
+            +header(40px, #484848, bold)
+        h2
+            +header(20px, $secondColor, normal)
+        #g
+            margin-top: 30px 
+            .img
+                img
+                    border: 5px solid #ddd
+                    border-radius: 50%
+            .info 
+                header
+                    h3
+                        +header(16px, #484848, bold)
+                        margin: 10px
+                    p
+                        +header(15px, #666666, light)
+                        line-height: 1.5
+                        &.h4
+                            +header(16px, $secondColor, normal)
+                            margin: 10px
+    .section-four
+        header
+            p.h1
+                +header(44px, white, bolder)
+            h3
+                +header(25px, $secondColor, normal)
+            .btn
+                +btn()
+    footer
+        padding: 8em 0 6em 0
+        background-color: #f6f6f6
+        a 
+            i
+                color: #aaa !important
+                font-size: 50px !important
+                margin-left: $mainMargin !important
+                transition: all 0.4s ease-in
+                &:hover
+                    color: #666 !important
+        p 
+            color: $secondColor
+            font-size: 18px
+            margin-top: $mainMargin
+section
+    padding: 6em 0 4em 0
+.left
+    padding-left: 13em !important
+.right
+    padding-right: 13em !important

@@ -1,0 +1,219 @@
+body {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial !important; }
+  body .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-image: url("../img/overlay.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  body nav {
+    padding-top: 3.25em;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important; }
+    body nav .navbar-header p.navbar-brand {
+      color: white;
+      font-weight: 200 !important; }
+      body nav .navbar-header p.navbar-brand:hover {
+        color: white;
+        cursor: pointer; }
+    body nav ul li a {
+      color: #ddd !important;
+      font-size: 16px;
+      transition: all 0.5s ease-out; }
+      body nav ul li a:hover {
+        color: white !important; }
+    body nav ul li.active > a {
+      background-color: transparent !important; }
+  body .banner {
+    display: block;
+    width: 100%;
+    height: 79vh; }
+    body .banner .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; }
+      body .banner .container h1 {
+        font-size: 40px;
+        font-weight: 900 !important;
+        color: white;
+        font-stretch: 100%;
+        margin: 0 0 25px 0; }
+      body .banner .container p {
+        color: #aaaaaa;
+        line-height: 1.5;
+        font-size: 22px;
+        margin-bottom: 25px; }
+      body .banner .container button {
+        background-color: #f32853 !important;
+        padding: 15px 40px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px; }
+        body .banner .container button:hover {
+          background-color: #f44066 !important; }
+  body .section-one {
+    margin: 0;
+    background-color: #fff; }
+    body .section-one .container .left p.h1 {
+      font-size: 40px;
+      font-weight: 700 !important;
+      color: black;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-one .container .left h2 {
+      font-size: 20px;
+      font-weight: normal !important;
+      color: #aaaaaa;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-one .container .right {
+      line-height: 2; }
+  body .section-two {
+    background-color: #f6f6f6 !important; }
+    body .section-two header h1 {
+      font-size: 44px;
+      font-weight: bolder !important;
+      color: #484848;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-two header h2 {
+      font-size: 25px;
+      font-weight: normal !important;
+      color: #aaaaaa;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-two .card footer {
+      box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold !important;
+      color: #484848;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-two .btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px; }
+      body .section-two .btns button {
+        margin-left: 25px; }
+        body .section-two .btns button:nth-child(1) {
+          background-color: #f32853 !important;
+          padding: 15px 40px;
+          border: none;
+          color: white;
+          font-weight: bold;
+          font-size: 18px; }
+          body .section-two .btns button:nth-child(1):hover {
+            background-color: #f44066 !important; }
+        body .section-two .btns button:nth-child(2) {
+          background-color: #323037 !important;
+          padding: 15px 40px;
+          border: none;
+          color: white;
+          font-weight: bold;
+          font-size: 18px; }
+          body .section-two .btns button:nth-child(2):hover {
+            background-color: #3e3c45 !important; }
+  body .section-three {
+    background-color: #fff; }
+    body .section-three h1 {
+      font-size: 40px;
+      font-weight: bold !important;
+      color: #484848;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-three h2 {
+      font-size: 20px;
+      font-weight: normal !important;
+      color: #aaaaaa;
+      font-stretch: 100%;
+      margin: 0 0 25px 0; }
+    body .section-three #g {
+      margin-top: 30px; }
+      body .section-three #g .img img {
+        border: 5px solid #ddd;
+        border-radius: 50%; }
+      body .section-three #g .info header h3 {
+        font-size: 16px;
+        font-weight: bold !important;
+        color: #484848;
+        font-stretch: 100%;
+        margin: 0 0 25px 0;
+        margin: 10px; }
+      body .section-three #g .info header p {
+        font-size: 15px;
+        font-weight: light !important;
+        color: #666666;
+        font-stretch: 100%;
+        margin: 0 0 25px 0;
+        line-height: 1.5; }
+        body .section-three #g .info header p.h4 {
+          font-size: 16px;
+          font-weight: normal !important;
+          color: #aaaaaa;
+          font-stretch: 100%;
+          margin: 0 0 25px 0;
+          margin: 10px; }
+  body .section-four header p.h1 {
+    font-size: 44px;
+    font-weight: bolder !important;
+    color: white;
+    font-stretch: 100%;
+    margin: 0 0 25px 0; }
+  body .section-four header h3 {
+    font-size: 25px;
+    font-weight: normal !important;
+    color: #aaaaaa;
+    font-stretch: 100%;
+    margin: 0 0 25px 0; }
+  body .section-four header .btn {
+    background-color: #f32853 !important;
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px; }
+    body .section-four header .btn:hover {
+      background-color: #f44066 !important; }
+  body footer {
+    padding: 8em 0 6em 0;
+    background-color: #f6f6f6; }
+    body footer a i {
+      color: #aaa !important;
+      font-size: 50px !important;
+      margin-left: 25px !important;
+      transition: all 0.4s ease-in; }
+      body footer a i:hover {
+        color: #666 !important; }
+    body footer p {
+      color: #aaaaaa;
+      font-size: 18px;
+      margin-top: 25px; }
+
+section {
+  padding: 6em 0 4em 0; }
+
+.left {
+  padding-left: 13em !important; }
+
+.right {
+  padding-right: 13em !important; }
+
+/*# sourceMappingURL=main.css.map */

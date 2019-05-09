@@ -1,0 +1,22 @@
+$mainColor: #ddd
+$hoverColor: white
+$secondColor: #aaaaaa
+$mainMargin: 25px
+$mainLineHeight: 1.5
+
+=header($size,$color, $wieght: 900)
+    font-size: $size
+    font-weight: $wieght !important
+    color: $color
+    font-stretch: 100%
+    margin: 0 0 $mainMargin 0
+
+=btn($bg:#f32853, $hbg:#f44066)
+    background-color: $bg !important
+    padding: 15px 40px
+    border: none
+    color: white
+    font-weight: bold
+    font-size: 18px
+    &:hover
+        background-color: $hbg !important

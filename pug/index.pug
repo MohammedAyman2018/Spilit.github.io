@@ -1,123 +1,96 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-        title SPATIAL | TEMPLATED
-        // Bootstrap
-        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous")
-        link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
-        link(rel="stylesheet", href="../css/main.css")
-        link(rel="stylesheet", href="../css/media.css")
-        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
-        // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-        // WARNING: Respond.js doesn't work if you view the page via file://
-        //if lt IE 9
-            script(src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js")
-            script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
-    body
-        .overlay
-        nav.navbar.navbar-default
-            .container
-                // Brand and toggle get grouped for better mobile display
-                .navbar-header
-                    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
-                        span.sr-only Toggle navigation
-                        span.icon-bar
-                        span.icon-bar
-                        span.icon-bar
-                    p.navbar-brand(href="#") <strong>SPATIAL</strong> BY TEMPLATED
-                // Collect the nav links, forms, and other content for toggling
-                #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                    ul.nav.navbar-nav.navbar-right
-                        li.active
-                            a(href="#")
-                                | HOME 
-                                span.sr-only (current)
-                        li
-                            a(href="#") GENERIC 
-                        li
-                            a(href="#") ELEMENTS
-        .banner.text-center.clearfix
-            .container
-                h1 SPATIAL
-                p LOREM IPSUM DOLOR SIT AMET NULLAM CONSEQUAT <br> INTERDUM VIVAMUS DONCE SED LIBERO.
-                button.btn.btn-default GET STARTED
-        section.section-one
-            .container
-                .row
-                    .col-md-6.col-xs-12.left
-                        p.h1 MAECENAS <br> LUCTUS LECTUS
-                        h2 PERSPICIATIS DOLOREMQUE RECUSANDAE DOLOR
-                    .col-md-6.col-xs-12.right
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.
-                        br
-                        |Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.
-        section.section-two
-            .container
-                header.text-center
-                    h1 FUSCE ULTRICES FRINGILLA
-                    h2 MAECENAS VITAE TELLUS FEUGIAT ELEIFEND
-                .row
-                    .col-md-6.col-xs-12
-                        .card.text-center
-                            .img
-                                img.img-responsive(src="../img/pic02.jpg", alt="beach")
-                            footer
-                                p LOREM IPSUM DOLOR SIT AMET.
-                    .col-md-6.col-xs-12
-                        .card.text-center
-                            .img
-                                img.img-responsive(src="../img/pic03.jpg", alt="Trees")
-                            footer
-                                p ILLUM, MAIORES TEMPORA CUPID?
-            .btns
-                button.btn.btn-default NULLA LACTUS
-                button.btn.btn-default SED VULPUTATE
-        section.section-three
-            .container
-                header.text-left
-                    h1 MAURIS VULPUTATE DOLOR
-                    h2 FEUGIAT SED LOREM IPSUM MAGNA
-                .row
-                    - for(var n = 4; n < 8; n++)
-                        .col-xs-12.col-md-6
-                            .row
-                                if (n== 5 || n==7)
-                                    #g
-                                        .img.col-md-4.pull-left
-                                            img.img-circle(src='../img/pic0'+ n + '.jpg', alt="picture")
-                                        .info.col-md-8
-                                            header.text-left
-                                                h3 LOREM IPSUM
-                                                p.h4 LOREM IPSUM DOLOR SIT
-                                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.
-                                else
-                                    #g
-                                        .img.col-md-4.pull-right
-                                            img.img-circle(src='../img/pic0'+ n + '.jpg', alt="picture")
-                                        .info.col-md-8
-                                            header.text-right
-                                                h3 LOREM IPSUM
-                                                p.h4 LOREM IPSUM DOLOR SIT
-                                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.
-        section.section-four
+head
+    include ./head
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/media.css")
+body
+    .overlay
+    nav.navbar.navbar-default
+        .container
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                p.navbar-brand(href="#") <strong>SPATIAL</strong> BY TEMPLATED
+            // Collect the nav links, forms, and other content for toggling
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li.active
+                        a(href="index.html")
+                            | HOME 
+                            span.sr-only (current)
+                    li
+                        a(href="generic.html") GENERIC 
+    .banner.text-center.clearfix
+        .container
+            h1 SPATIAL
+            p LOREM IPSUM DOLOR SIT AMET NULLAM CONSEQUAT <br> INTERDUM VIVAMUS DONCE SED LIBERO.
+            button.btn.btn-default GET STARTED
+    section.section-one
+        .container
+            .row
+                .col-md-6.col-xs-12.left
+                    p.h1 MAECENAS <br> LUCTUS LECTUS
+                    h2 PERSPICIATIS DOLOREMQUE RECUSANDAE DOLOR
+                .col-md-6.col-xs-12.right
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.
+                    br
+                    |Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.
+    section.section-two
+        .container
             header.text-center
-                p.h1 AENEAN ELEMENTUM LIGULA
-                h3 FEUGIAT SED LOREM IPSUM MAGNA
-                button.btn.btn-default GET IN TOUCH
-        footer.text-center
-            a(href="https://www.facebook.com/mohammed.ayman.75098")
-                i.fab.fa-facebook-f
-            a(href="https://github.com/MohammedAyman2018")
-                i.fab.fa-twitter
-            a(href="")
-                i.fab.fa-github
-            p
-            span © Untitled | Design: <a href="https://templated.co/">TEMPLATED</a> | Images: Unsplash
-        // jQuery (necessary for Bootstrap's JavaScript plugins)
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-        // Include all compiled plugins (below), or include individual files as needed
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+                h1 FUSCE ULTRICES FRINGILLA
+                h2 MAECENAS VITAE TELLUS FEUGIAT ELEIFEND
+            .row
+                .col-md-6.col-xs-12.col-sm-6
+                    .card.text-center
+                        .img
+                            img.img-responsive(src="img/pic02.jpg", alt="beach")
+                        footer
+                            p LOREM IPSUM DOLOR SIT AMET.
+                .col-md-6.col-xs-12.col-sm-6
+                    .card.text-center
+                        .img
+                            img.img-responsive(src="../img/pic03.jpg", alt="Trees")
+                        footer
+                            p ILLUM, MAIORES TEMPORA CUPID?
+        .btns
+            button.btn.btn-default NULLA LACTUS
+            button.btn.btn-default SED VULPUTATE
+    section.section-three
+        .container
+            header.text-left
+                h1 MAURIS VULPUTATE DOLOR
+                h2 FEUGIAT SED LOREM IPSUM MAGNA
+            .row
+                - for(var n = 4; n < 8; n++)
+                    .col-xs-12.col-md-6
+                        .row
+                            if (n== 5 || n==7)
+                                #g.clearfix
+                                    .img.col-sm-4.col-xs-12.pull-left
+                                        img.img-circle(src='img/pic0'+ n + '.jpg', alt="picture")
+                                    .info.col-md-7.col-md-offset-1
+                                        header.text-left
+                                            h3 LOREM IPSUM
+                                            p.h4 LOREM IPSUM DOLOR SIT
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.
+                            else
+                                #g.clearfix
+                                    .img.col-sm-4.col-xs-12.pull-right
+                                        img.img-circle(src='img/pic0'+ n + '.jpg', alt="picture")
+                                    .info.col-md-8
+                                        header.text-right
+                                            h3 LOREM IPSUM
+                                            p.h4 LOREM IPSUM DOLOR SIT
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.
+    section.section-four
+        header.text-center
+            p.h1 AENEAN ELEMENTUM LIGULA
+            h3 FEUGIAT SED LOREM IPSUM MAGNA
+            button.btn.btn-default GET IN TOUCH
+    include ./footer

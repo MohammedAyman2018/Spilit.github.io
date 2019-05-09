@@ -1,0 +1,38 @@
+@import vars
+@import ./footer.sass
+
+nav.navbar
+    background-color: #fff !important
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    p.navbar-brand,ul.nav li a
+        color: black !important
+    button.navbar-toggle
+        border: none
+        &:hover,&:focus
+            background-color: transparent !important
+        span
+            background-color: #000 !important
+    ul
+        li
+            a
+                color: $mainColor !important
+                font-size: 16px
+            &.active > a
+                background-color: transparent !important
+
+header
+    padding-top: 100px !important
+    margin-bottom: 30px
+    h1
+        +header(30px, #000, bolder)
+    h2
+        +header(28px, $secondColor, 300)
+section.text
+    margin: 30px 0 !important
+    p
+        color: #666 !important
+        font-size: 16px !important
+        line-height: 1.5 !important
